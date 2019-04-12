@@ -1,0 +1,274 @@
+EESchema Schematic File Version 4
+EELAYER 29 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 1 1
+Title ""
+Date ""
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L power:+24V #PWR?
+U 1 1 5CB04187
+P 1300 950
+F 0 "#PWR?" H 1300 800 50  0001 C CNN
+F 1 "+24V" H 1315 1123 50  0000 C CNN
+F 2 "" H 1300 950 50  0001 C CNN
+F 3 "" H 1300 950 50  0001 C CNN
+	1    1300 950 
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 5CB04671
+P 3800 1400
+F 0 "#PWR?" H 3800 1150 50  0001 C CNN
+F 1 "GND" H 3805 1227 50  0000 C CNN
+F 2 "" H 3800 1400 50  0001 C CNN
+F 3 "" H 3800 1400 50  0001 C CNN
+	1    3800 1400
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R R?
+U 1 1 5CB081A7
+P 1950 950
+F 0 "R?" V 1743 950 50  0000 C CNN
+F 1 "R" V 1834 950 50  0000 C CNN
+F 2 "" V 1880 950 50  0001 C CNN
+F 3 "~" H 1950 950 50  0001 C CNN
+	1    1950 950 
+	0    1    1    0   
+$EndComp
+$Comp
+L Transistor_BJT:2N2219 Q?
+U 1 1 5CB09EFF
+P 2700 1050
+F 0 "Q?" V 3028 1050 50  0000 C CNN
+F 1 "2N2219" V 2937 1050 50  0000 C CNN
+F 2 "Package_TO_SOT_THT:TO-39-3" H 2900 975 50  0001 L CIN
+F 3 "http://www.onsemi.com/pub_link/Collateral/2N2219-D.PDF" H 2700 1050 50  0001 L CNN
+	1    2700 1050
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Device:D D?
+U 1 1 5CB0ACC5
+P 3150 1200
+F 0 "D?" V 3104 1279 50  0000 L CNN
+F 1 "D" V 3195 1279 50  0000 L CNN
+F 2 "" H 3150 1200 50  0001 C CNN
+F 3 "~" H 3150 1200 50  0001 C CNN
+	1    3150 1200
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:C C?
+U 1 1 5CB0B470
+P 3800 1200
+F 0 "C?" H 3915 1246 50  0000 L CNN
+F 1 "C" H 3915 1155 50  0000 L CNN
+F 2 "" H 3838 1050 50  0001 C CNN
+F 3 "~" H 3800 1200 50  0001 C CNN
+	1    3800 1200
+	1    0    0    -1  
+$EndComp
+$Comp
+L Connector_Generic:Conn_01x01 J?
+U 1 1 5CB0CDC9
+P 4750 950
+F 0 "J?" H 4830 992 50  0000 L CNN
+F 1 "Conn_01x01" H 4830 901 50  0000 L CNN
+F 2 "" H 4750 950 50  0001 C CNN
+F 3 "~" H 4750 950 50  0001 C CNN
+	1    4750 950 
+	1    0    0    -1  
+$EndComp
+$Comp
+L Connector_Generic:Conn_01x01 J?
+U 1 1 5CB0D805
+P 4750 1550
+F 0 "J?" H 4830 1592 50  0000 L CNN
+F 1 "Conn_01x01" H 4830 1501 50  0000 L CNN
+F 2 "" H 4750 1550 50  0001 C CNN
+F 3 "~" H 4750 1550 50  0001 C CNN
+	1    4750 1550
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C C?
+U 1 1 5CB0DCF7
+P 4300 1200
+F 0 "C?" H 4415 1246 50  0000 L CNN
+F 1 "C" H 4415 1155 50  0000 L CNN
+F 2 "" H 4338 1050 50  0001 C CNN
+F 3 "~" H 4300 1200 50  0001 C CNN
+	1    4300 1200
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	1300 950  1800 950 
+Wire Wire Line
+	2100 950  2500 950 
+Wire Wire Line
+	3150 1350 3150 1400
+Wire Wire Line
+	2900 950  3150 950 
+Wire Wire Line
+	3150 950  3150 1050
+Wire Wire Line
+	3150 950  3800 950 
+Wire Wire Line
+	3800 950  3800 1050
+Connection ~ 3150 950 
+Wire Wire Line
+	3150 1400 3800 1400
+Wire Wire Line
+	3800 1400 3800 1350
+Wire Wire Line
+	3800 1400 4300 1400
+Wire Wire Line
+	4300 1400 4300 1350
+Connection ~ 3800 1400
+Wire Wire Line
+	4300 950  4300 1050
+Connection ~ 3800 950 
+Wire Wire Line
+	4550 950  4500 950 
+Connection ~ 4300 950 
+Wire Wire Line
+	4300 1400 4300 1550
+Wire Wire Line
+	4300 1550 4550 1550
+Connection ~ 4300 1400
+$Comp
+L power:+5V #PWR?
+U 1 1 5CB0F0BD
+P 4500 800
+F 0 "#PWR?" H 4500 650 50  0001 C CNN
+F 1 "+5V" H 4515 973 50  0000 C CNN
+F 2 "" H 4500 800 50  0001 C CNN
+F 3 "" H 4500 800 50  0001 C CNN
+	1    4500 800 
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3800 950  4300 950 
+Wire Wire Line
+	4500 800  4500 950 
+Connection ~ 4500 950 
+Wire Wire Line
+	4500 950  4300 950 
+Text Label 3400 3300 0    50   ~ 0
+Q_Base
+Text Label 2700 1400 0    50   ~ 0
+Q_Base
+Wire Wire Line
+	3150 3300 3400 3300
+Wire Wire Line
+	2700 1250 2700 1400
+Wire Wire Line
+	2650 3900 2650 4000
+$Comp
+L power:GND #PWR?
+U 1 1 5CB126F3
+P 2650 4000
+F 0 "#PWR?" H 2650 3750 50  0001 C CNN
+F 1 "GND" H 2655 3827 50  0000 C CNN
+F 2 "" H 2650 4000 50  0001 C CNN
+F 3 "" H 2650 4000 50  0001 C CNN
+	1    2650 4000
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+5V #PWR?
+U 1 1 5CB16A1D
+P 2850 2700
+F 0 "#PWR?" H 2850 2550 50  0001 C CNN
+F 1 "+5V" H 2865 2873 50  0000 C CNN
+F 2 "" H 2850 2700 50  0001 C CNN
+F 3 "" H 2850 2700 50  0001 C CNN
+	1    2850 2700
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2850 2700 2850 3100
+$Comp
+L Device:C C?
+U 1 1 5CB1966A
+P 1500 3450
+F 0 "C?" H 1615 3496 50  0000 L CNN
+F 1 "C" H 1615 3405 50  0000 L CNN
+F 2 "" H 1538 3300 50  0001 C CNN
+F 3 "~" H 1500 3450 50  0001 C CNN
+	1    1500 3450
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 5CB1D636
+P 1500 3950
+F 0 "#PWR?" H 1500 3700 50  0001 C CNN
+F 1 "GND" H 1505 3777 50  0000 C CNN
+F 2 "" H 1500 3950 50  0001 C CNN
+F 3 "" H 1500 3950 50  0001 C CNN
+	1    1500 3950
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	1500 3600 1500 3950
+Wire Wire Line
+	1500 3100 1500 3300
+$Comp
+L Device:R R?
+U 1 1 5CB1E3D7
+P 1800 3800
+F 0 "R?" H 1870 3846 50  0000 L CNN
+F 1 "R" H 1870 3755 50  0000 L CNN
+F 2 "" V 1730 3800 50  0001 C CNN
+F 3 "~" H 1800 3800 50  0001 C CNN
+	1    1800 3800
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R R?
+U 1 1 5CB1EF33
+P 1800 3400
+F 0 "R?" H 1870 3446 50  0000 L CNN
+F 1 "R" H 1870 3355 50  0000 L CNN
+F 2 "" V 1730 3400 50  0001 C CNN
+F 3 "~" H 1800 3400 50  0001 C CNN
+	1    1800 3400
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2650 3100 2850 3100
+$Comp
+L Timer:NE555 U?
+U 1 1 5CB100FE
+P 2650 3500
+F 0 "U?" H 2650 4081 50  0000 C CNN
+F 1 "NE555" H 2650 3990 50  0000 C CNN
+F 2 "" H 2650 3500 50  0001 C CNN
+F 3 "http://www.ti.com/lit/ds/symlink/ne555.pdf" H 2650 3500 50  0001 C CNN
+	1    2650 3500
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+5V #PWR?
+U 1 1 5CB21EF9
+P 1500 3100
+F 0 "#PWR?" H 1500 2950 50  0001 C CNN
+F 1 "+5V" H 1515 3273 50  0000 C CNN
+F 2 "" H 1500 3100 50  0001 C CNN
+F 3 "" H 1500 3100 50  0001 C CNN
+	1    1500 3100
+	1    0    0    -1  
+$EndComp
+$EndSCHEMATC
