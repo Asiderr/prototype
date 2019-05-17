@@ -83,12 +83,6 @@ F 3 "http://www.ti.com/lit/ds/symlink/ne555.pdf" H 2350 4850 50  0001 C CNN
 	1    2350 4850
 	1    0    0    -1  
 $EndComp
-Wire Wire Line
-	4150 4350 4450 4350
-Wire Wire Line
-	4150 4450 4150 4350
-Wire Wire Line
-	4150 4850 4150 4750
 $Comp
 L power:GND #PWR0103
 U 1 1 5CB2275D
@@ -101,47 +95,20 @@ F 3 "" H 3650 5650 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L Device:R R4
-U 1 1 5CB1EF33
-P 4150 4600
-F 0 "R4" H 4220 4646 50  0000 L CNN
-F 1 "10k" H 4220 4555 50  0000 L CNN
-F 2 "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal" V 4080 4600 50  0001 C CNN
-F 3 "~" H 4150 4600 50  0001 C CNN
-	1    4150 4600
-	1    0    0    -1  
-$EndComp
-$Comp
-L Device:R R3
-U 1 1 5CB1E3D7
-P 4150 4100
-F 0 "R3" H 4220 4146 50  0000 L CNN
-F 1 "40k" H 4220 4055 50  0000 L CNN
-F 2 "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal" V 4080 4100 50  0001 C CNN
-F 3 "~" H 4150 4100 50  0001 C CNN
-	1    4150 4100
-	1    0    0    -1  
-$EndComp
-$Comp
 L Device:C C4
 U 1 1 5CB1966A
 P 3650 5350
 F 0 "C4" H 3765 5396 50  0000 L CNN
 F 1 "820p" H 3765 5305 50  0000 L CNN
-F 2 "Capacitor_THT:C_Disc_D7.5mm_W5.0mm_P10.00mm" H 3688 5200 50  0001 C CNN
+F 2 "Capacitor_SMD:C_0603_1608Metric_Pad1.05x0.95mm_HandSolder" H 3688 5200 50  0001 C CNN
 F 3 "~" H 3650 5350 50  0001 C CNN
 	1    3650 5350
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	4150 3850 4150 3950
-Wire Wire Line
 	2850 5050 3650 5050
 Wire Wire Line
-	4150 4350 4150 4250
-Wire Wire Line
 	4450 4200 4650 4200
-Connection ~ 4150 4350
 Text Label 4650 4200 2    50   ~ 0
 TRIG
 Wire Wire Line
@@ -153,7 +120,7 @@ L Device:C C3
 U 1 1 5CB37AF6
 P 1300 5000
 F 0 "C3" H 1415 5046 50  0000 L CNN
-F 1 "10n" H 1415 4955 50  0000 L CNN
+F 1 "100n" H 1415 4955 50  0000 L CNN
 F 2 "Capacitor_THT:C_Disc_D7.5mm_W5.0mm_P10.00mm" H 1338 4850 50  0001 C CNN
 F 3 "~" H 1300 5000 50  0001 C CNN
 	1    1300 5000
@@ -290,16 +257,11 @@ $EndComp
 Wire Wire Line
 	4150 3850 4050 3850
 Wire Wire Line
-	4450 4350 4450 4200
-Wire Wire Line
-	4450 4350 4450 4500
-Wire Wire Line
 	4450 4500 4650 4500
 Wire Wire Line
 	4650 4500 4650 5050
 Wire Wire Line
 	4650 5050 3650 5050
-Connection ~ 4450 4350
 Connection ~ 3650 5050
 $Comp
 L Device:R R2
@@ -415,4 +377,26 @@ Wire Wire Line
 Connection ~ 3250 1500
 Wire Wire Line
 	3150 3850 2550 3850
+Wire Wire Line
+	4450 4200 4450 4300
+$Comp
+L Device:R_POT_TRIM RV1
+U 1 1 5CDF9D06
+P 4150 4300
+F 0 "RV1" H 4080 4346 50  0000 R CNN
+F 1 "R_POT_TRIM" H 4080 4255 50  0000 R CNN
+F 2 "Potentiometer_THT:Potentiometer_Piher_PT-10-V10_Vertical" H 4150 4300 50  0001 C CNN
+F 3 "~" H 4150 4300 50  0001 C CNN
+	1    4150 4300
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4300 4300 4450 4300
+Connection ~ 4450 4300
+Wire Wire Line
+	4450 4300 4450 4500
+Wire Wire Line
+	4150 3850 4150 4150
+Wire Wire Line
+	4150 4450 4150 4850
 $EndSCHEMATC

@@ -1,4 +1,4 @@
-update=26/04/2019 10:23:20
+update=17.05.2019 09:49:28
 version=1
 last_client=kicad
 [general]
@@ -28,7 +28,7 @@ MinViaDrill=0.3
 MinMicroViaDiameter=0.2
 MinMicroViaDrill=0.09999999999999999
 MinHoleToHole=0.25
-TrackWidth1=0.3
+TrackWidth1=1
 ViaDiameter1=0.8
 ViaDrill1=0.4
 dPairWidth1=0.2
@@ -61,8 +61,8 @@ SolderPasteRatio=-0
 [pcbnew/Netclasses]
 [pcbnew/Netclasses/1]
 Name=Power
-Clearance=0.2
-TrackWidth=1
+Clearance=0.5
+TrackWidth=1.5
 ViaDiameter=0.8
 ViaDrill=0.4
 uViaDiameter=0.3
