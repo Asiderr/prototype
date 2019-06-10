@@ -1,6 +1,6 @@
 EESchema Schematic File Version 4
 LIBS:back-cache
-EELAYER 29 0
+EELAYER 26 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
@@ -73,17 +73,6 @@ F 3 "http://www.ti.com/lit/ds/symlink/ne555.pdf" H 2350 4850 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L power:GND #PWR0103
-U 1 1 5CB2275D
-P 3650 5650
-F 0 "#PWR0103" H 3650 5400 50  0001 C CNN
-F 1 "GND" H 3655 5477 50  0000 C CNN
-F 2 "" H 3650 5650 50  0001 C CNN
-F 3 "" H 3650 5650 50  0001 C CNN
-	1    3650 5650
-	1    0    0    -1  
-$EndComp
-$Comp
 L Device:C C4
 U 1 1 5CB1966A
 P 3650 5350
@@ -117,17 +106,6 @@ F 3 "~" H 1300 5000 50  0001 C CNN
 $EndComp
 Wire Wire Line
 	1850 4850 1300 4850
-$Comp
-L power:GND #PWR0104
-U 1 1 5CB39283
-P 1300 5300
-F 0 "#PWR0104" H 1300 5050 50  0001 C CNN
-F 1 "GND" H 1305 5127 50  0000 C CNN
-F 2 "" H 1300 5300 50  0001 C CNN
-F 3 "" H 1300 5300 50  0001 C CNN
-	1    1300 5300
-	1    0    0    -1  
-$EndComp
 Wire Wire Line
 	1300 5150 1300 5300
 Wire Wire Line
@@ -138,7 +116,7 @@ U 1 1 5CB3BF6E
 P 3800 1400
 F 0 "L1" V 3990 1400 50  0000 C CNN
 F 1 "400u" V 3899 1400 50  0000 C CNN
-F 2 "back:ind_W60mm_D19mm_P38mm" H 3800 1400 50  0001 C CNN
+F 2 "Footprints:ind_W60mm_D19mm_P38mm" H 3800 1400 50  0001 C CNN
 F 3 "~" H 3800 1400 50  0001 C CNN
 	1    3800 1400
 	0    -1   -1   0   
@@ -166,7 +144,7 @@ U 1 1 5CC2AE89
 P 5250 1600
 F 0 "J2" H 5330 1592 50  0000 L CNN
 F 1 "Screw_Terminal_01x02" H 5330 1501 50  0000 L CNN
-F 2 "TerminalBlock_4Ucon:TerminalBlock_4Ucon_1x02_P3.50mm_Vertical" H 5250 1600 50  0001 C CNN
+F 2 "TerminalBlock:TerminalBlock_bornier-2_P5.08mm" H 5250 1600 50  0001 C CNN
 F 3 "~" H 5250 1600 50  0001 C CNN
 	1    5250 1600
 	1    0    0    -1  
@@ -184,7 +162,7 @@ U 1 1 5CC2C2AF
 P 1100 1600
 F 0 "J1" H 1020 1275 50  0000 C CNN
 F 1 "Screw_Terminal_01x02" H 1020 1366 50  0000 C CNN
-F 2 "TerminalBlock_4Ucon:TerminalBlock_4Ucon_1x02_P3.50mm_Vertical" H 1100 1600 50  0001 C CNN
+F 2 "TerminalBlock:TerminalBlock_bornier-2_P5.08mm" H 1100 1600 50  0001 C CNN
 F 3 "~" H 1100 1600 50  0001 C CNN
 	1    1100 1600
 	-1   0    0    1   
@@ -277,7 +255,7 @@ U 1 1 5CC30FEE
 P 2550 3400
 F 0 "J3" V 2514 3212 50  0000 R CNN
 F 1 "Screw_Terminal_01x02" V 2423 3212 50  0000 R CNN
-F 2 "TerminalBlock_4Ucon:TerminalBlock_4Ucon_1x02_P3.50mm_Vertical" H 2550 3400 50  0001 C CNN
+F 2 "TerminalBlock:TerminalBlock_bornier-2_P5.08mm" H 2550 3400 50  0001 C CNN
 F 3 "~" H 2550 3400 50  0001 C CNN
 	1    2550 3400
 	0    -1   -1   0   
@@ -392,4 +370,8 @@ Wire Wire Line
 	2650 3600 2650 3700
 Wire Wire Line
 	2650 3700 2800 3700
+Text Label 3650 5650 0    50   ~ 0
+GNDCLK
+Text Label 1300 5300 0    50   ~ 0
+GNDCLK
 $EndSCHEMATC
