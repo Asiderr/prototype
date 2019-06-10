@@ -26,17 +26,6 @@ F 3 "" H 4100 1850 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L Device:C C1
-U 1 1 5CB0B470
-P 4100 1650
-F 0 "C1" H 4215 1696 50  0000 L CNN
-F 1 "1u" H 4215 1605 50  0000 L CNN
-F 2 "Capacitor_THT:CP_Axial_L11.0mm_D5.0mm_P18.00mm_Horizontal" H 4138 1500 50  0001 C CNN
-F 3 "~" H 4100 1650 50  0001 C CNN
-	1    4100 1650
-	1    0    0    -1  
-$EndComp
-$Comp
 L Device:C C2
 U 1 1 5CB0DCF7
 P 4600 1650
@@ -78,7 +67,7 @@ U 1 1 5CB100FE
 P 2350 4850
 F 0 "U1" H 2350 5431 50  0000 C CNN
 F 1 "NE555" H 2350 5340 50  0000 C CNN
-F 2 "Package_DIP:DIP-8_W7.62mm_LongPads" H 2350 4850 50  0001 C CNN
+F 2 "Package_DIP:DIP-8_W10.16mm_LongPads" H 2350 4850 50  0001 C CNN
 F 3 "http://www.ti.com/lit/ds/symlink/ne555.pdf" H 2350 4850 50  0001 C CNN
 	1    2350 4850
 	1    0    0    -1  
@@ -331,8 +320,6 @@ RST
 Text Label 1750 5350 0    50   ~ 0
 RST
 Wire Wire Line
-	2650 3600 2850 3600
-Wire Wire Line
 	1750 5050 1750 5350
 Wire Wire Line
 	3600 3850 3600 4850
@@ -342,17 +329,6 @@ Wire Wire Line
 Connection ~ 3600 4850
 Wire Wire Line
 	3600 4850 3750 4850
-$Comp
-L power:GND #PWR0102
-U 1 1 5CC493B4
-P 2850 3600
-F 0 "#PWR0102" H 2850 3350 50  0001 C CNN
-F 1 "GND" H 2855 3427 50  0000 C CNN
-F 2 "" H 2850 3600 50  0001 C CNN
-F 3 "" H 2850 3600 50  0001 C CNN
-	1    2850 3600
-	1    0    0    -1  
-$EndComp
 $Comp
 L power:GND #PWR0106
 U 1 1 5CC5B78A
@@ -399,4 +375,21 @@ Wire Wire Line
 	4150 3850 4150 4150
 Wire Wire Line
 	4150 4450 4150 4850
+$Comp
+L Device:C C1
+U 1 1 5CB0B470
+P 4100 1650
+F 0 "C1" H 4215 1696 50  0000 L CNN
+F 1 "22u" H 4215 1605 50  0000 L CNN
+F 2 "Capacitor_THT:CP_Axial_L11.0mm_D5.0mm_P18.00mm_Horizontal" H 4138 1500 50  0001 C CNN
+F 3 "~" H 4100 1650 50  0001 C CNN
+	1    4100 1650
+	1    0    0    -1  
+$EndComp
+Text Label 2800 3700 0    50   ~ 0
+GNDCLK
+Wire Wire Line
+	2650 3600 2650 3700
+Wire Wire Line
+	2650 3700 2800 3700
 $EndSCHEMATC
